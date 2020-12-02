@@ -33,7 +33,7 @@ Page({
 
   testFunction() {
     wx.cloud.callFunction({
-      name: 'sum',
+      name: 'sumTest',
       data: {
         a: 1,
         b: 2

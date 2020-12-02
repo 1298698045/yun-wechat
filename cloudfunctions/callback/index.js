@@ -13,10 +13,12 @@ exports.main = async (event, context) => {
 
   const result = await cloud.openapi.customerServiceMessage.send({
     touser: OPENID,
-    msgtype: 'text',
+    msgtype: 'text',  
     text: {
       content: `收到：${event.Content}`,
     }
+
+    
   })
 
   console.log(result)

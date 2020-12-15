@@ -17,7 +17,7 @@
 
   <view>
     <view wx:for="{{list}}">{{item.count}}</view>
-    <button bindtap="getQuery">查询</button>
+    <van-button type="primary" bindtap="getQuery">查询</van-button>
     <button bindtap="queryField">字段查询</button>
   </view>
 
